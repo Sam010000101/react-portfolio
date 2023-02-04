@@ -5,7 +5,7 @@ import './style.css';
 // Depending on the current path, this component sets the "active" class on the appropriate navigation link item
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light">
       <Link className="navbar-brand" to="/">
         Home
       </Link>
@@ -13,7 +13,7 @@ function Navbar() {
         <ul className="navbar-nav">
           <li className="nav-item">
             <NavLink
-              to="/"
+              to="/project"
               end
               className={({ isActive }) =>
                 isActive ? 'nav-link active' : 'nav-link'
@@ -24,7 +24,7 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <NavLink
-              to="/discover"
+              to="/gallery"
               className={({ isActive }) =>
                 isActive ? 'nav-link active' : 'nav-link'
               }
@@ -34,7 +34,7 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <NavLink
-              to="/search"
+              to="/contact"
               className={({ isActive }) =>
                 isActive ? 'nav-link active' : 'nav-link'
               }
