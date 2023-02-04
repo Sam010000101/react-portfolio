@@ -17,8 +17,8 @@ function App() {
         <Wrapper>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/gallery" element={<Gallery />} />
             <Route path="/project" element={<Project />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </Wrapper>
